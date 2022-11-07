@@ -1,0 +1,49 @@
+body{
+    background-color: black;
+    color: rgb(15, 13, 9);
+}
+
+.demo{
+    position: relative;
+    background-color: rgb(190, 189, 95);
+    width: 80px;
+    height: 80px;
+    top: 180px;
+    left: 150px;
+    padding: 50px;
+    border-radius: 30px;
+}
+
+.count{
+    position: relative;
+    background-color: rgb(172, 190, 68);
+    width: 80px;
+    height: 80px;
+    top: 0px;
+    left: 400px;
+    padding: 50px;
+    border-radius: 30px;
+}
+
+
+
+.counts{
+    position: relative;
+    background-color: rgb(200, 219, 25);
+    width: 80px;
+    height: 80px;
+    top: -180px;
+    left: 650px;
+    padding: 50px;
+    border-radius: 30px;
+}
+.counted{
+    position: relative;
+    background-color: rgb(146, 144, 3);
+    width: 80px;
+    height: 80px;
+    top: -360px;
+    left:880px;
+    padding: 50px;
+    border-radius: 30px;
+}
