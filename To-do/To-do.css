@@ -1,0 +1,140 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(135deg, #c2761f, #806cee);
+}
+::selection{
+  color: #fff;
+  background: #3C87FF;
+}
+.wrapper{
+  max-width: 405px;
+  padding: 28px 0 30px;
+  margin: 137px auto;
+  background: #fff;
+  border-radius: 10px;
+}
+.task-input{
+  height: 55px;
+  padding: 0 25px;
+  position: relative;
+}
+.task-input input{
+  height: 100%;
+  width: 100%;
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 20px ;
+  border: 1px solid rgb(144, 250, 162);
+}
+
+.task-input input::placeholder{
+  color: #b2f0e2;
+}
+.controls, li{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.controls{
+  padding: 18px 25px;
+  border-bottom: 1px solid #ccc;
+}
+.filters span{
+  margin: 5px;
+  font-size: 20px;
+  color: #444444;
+  cursor: pointer;
+}
+.filters span.active{
+  color: #9bf55e;
+}
+.controls .clear-btn{
+  border: 1px;
+  opacity: 0.6;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 13px;
+  padding: 7px 13px;
+  border-radius:30%;
+  letter-spacing: 0.3px;
+  transition: transform 0.25s ease;
+  background: linear-gradient(135deg, #1798fb 0%, #fe7a2d 100%);
+}
+.clear-btn.active{
+  opacity: 0.9;
+  pointer-events: auto;
+}
+.clear-btn:active{
+  transform: scale(0.93);
+}
+.task-box{
+  margin-top: 20px;
+  margin-right: 5px;
+  padding: 20px;
+}
+.task-box.overflow{
+  overflow-y: auto;
+  max-height: 250px;
+}
+.task-box::-webkit-scrollbar{
+  width: 8px;
+}
+.task-box::-webkit-scrollbar-track{
+  background: #5985e6;
+  border-radius: 25px;
+}
+.task-box .task{
+  font-size: 14px;
+  margin-bottom: 16px;
+  padding-bottom: 14px;
+  align-items: flex-start;
+  border-bottom: 2px solid rgb(117, 236, 216);
+}
+.task-box .task label{
+  display: flex;
+}
+.task label input{
+  margin-top: 7px;
+  accent-color: #6fd1f7;
+}
+.task label p{
+  margin-left: 10px;
+}
+.task label p.checked{
+  text-decoration: line-through;
+}
+.task-box .settings{
+  position: relative;
+}
+.settings .task-menu{
+  z-index: 10;
+  right: -5px;
+  bottom: -65px;
+  padding: 5px 0;
+  background: rgb(146, 252, 146);
+  position: absolute;
+  border-radius: 30%;
+  transform: scale(0);
+  transform-origin: top right;
+}
+.task-menu.show{
+  transform: scale(1);
+}
+.task-menu li{
+  height: 25px;
+  font-size: 14px;
+  margin-bottom: 2px;
+  padding:  15px;
+  cursor: pointer;
+  justify-content: flex-start;
+}
